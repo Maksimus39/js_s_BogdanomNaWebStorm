@@ -1,4 +1,5 @@
 function printMyName() {
     console.log('Makson')
 }
-setTimeout(printMyName, 4000)
+console.log('start')
+setInterval(printMyName, 4000)
