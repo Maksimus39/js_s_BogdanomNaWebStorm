@@ -1,5 +1,16 @@
-function printMyName() {
-    console.log('Makson')
+// области видимости
+
+let a
+let b
+
+function myFn() {
+    let b
+    a=true
+    b=10
+    console.log(b) // 10
 }
-console.log('start')
-setInterval(printMyName, 4000)
+
+myFn()
+
+console.log(a) // true
+console.log(b) // undefined
