@@ -1,16 +1,10 @@
-// области видимости
+// цепочка области видимости
 
-let a
-let b
-
+const a=5
 function myFn() {
-    let b
-    a=true
-    b=10
-    console.log(b) // 10
+    function innerFn() {
+        console.log(a) // 5
+    }
+    innerFn()
 }
-
 myFn()
-
-console.log(a) // true
-console.log(b) // undefined
