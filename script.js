@@ -1,11 +1,5 @@
-// цепочка области видимости
-
-// области видимости , так не рекомендуется делать
-'use strict'
-function myFn() {
-    a = true
-    console.log(a)  // true
-}
-
-myFn()   // не рекомендуется
-console.log(a) //true
+let a, b
+a = 10
+b = a
+let c = a + b
+console.log(c)
