@@ -1,10 +1,10 @@
 // цепочка области видимости
 
-const a=5
+// области видимости , так не рекомендуется делать
 function myFn() {
-    function innerFn() {
-        console.log(a) // 5
-    }
-    innerFn()
+    a = true
+    console.log(a) // true
 }
-myFn()
+
+myFn()   // не рекомендуется
+console.log(a) //true
